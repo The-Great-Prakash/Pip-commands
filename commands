@@ -1,0 +1,33 @@
+pip --version
+
+for installing packages
+pip search package_name
+
+pip install package_name
+
+For checking what all packages you have
+pip list ()
+
+for update all package at one time
+pip freeze --local | grep -v '^\-e' | cut -d = -f 1 | xargs -n1 pip install -U
+
+
+pip install pip-upgrade-outdated
+pip_upgrade_outdated
+
+For uninstall any package
+pip uninstall package_name
+
+pip list
+pip list --outdated
+pip list -o
+
+For sending requirement in txt
+pip freeze
+pip freeze > requirements.txt
+
+for checking
+cat requierment.txt
+
+Same if someone sent u requirement on txt file for download
+pip install -r file_name.txt
